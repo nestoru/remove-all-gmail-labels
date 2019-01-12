@@ -11,10 +11,10 @@ let wait = async ms => new Promise((resolve, reject)=>setTimeout(resolve, ms));
 async function removeAllLabels() {
   // keep going until there is no more remove link
   while( clickOnXpath("//span[text()='remove']") ) { 
-    await wait(2000);
+    await wait(3000);
     // confirm removal
     clickOnXpath("//button[@name='ok']");
-    await wait(2000);
+    await wait(3000);
   }
 }
 
